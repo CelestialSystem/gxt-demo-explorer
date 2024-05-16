@@ -140,14 +140,14 @@
           <hostedWebapp>${webappDirectory}</hostedWebapp>
           <runTarget>index.html</runTarget>    -->
         </configuration>
-        <executions>
+        <!--<executions>
           <execution>
             <goals>
               <goal>compile</goal>
               <goal>test</goal>
             </goals>
           </execution>
-        </executions>
+        </executions>-->
       </plugin>
 
       <plugin>
@@ -315,7 +315,7 @@
           <groupId>org.eclipse.jetty</groupId>
           <artifactId>jetty-maven-plugin</artifactId>
           <version>11.0.19</version>
-        <!--  <configuration>
+          <configuration>
             <stopPort>9960</stopPort>
             <stopKey>stop-jetty</stopKey>
             <systemProperties>
@@ -324,7 +324,7 @@
                 <value>8880</value>
               </systemProperty>
             </systemProperties>
-          </configuration>-->
+          </configuration>
         </plugin>
 
         <plugin>
@@ -439,11 +439,6 @@
       <artifactId>jsinterop-annotations</artifactId>
       <version>2.1.0</version>
     </dependency>
-    <dependency>
-      <groupId>javax.sql</groupId>
-      <artifactId>javax.sql-api</artifactId>
-      <version>1.0</version>
-    </dependency>
 
     <!-- GXT -->
     <dependency>
@@ -501,7 +496,7 @@
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
       <!--<version>20231013</version>-->
-      <version>20171018</version>
+      <version>20240303</version>
       <scope>compile</scope>
       <exclusions>
         <exclusion>
@@ -608,6 +603,12 @@
       <artifactId>elemental2-webstorage</artifactId>
       <version>1.1.0</version>
     </dependency>
+    <dependency>
+      <groupId>javax.sql</groupId>
+      <artifactId>javax.sql-api</artifactId>
+      <version>1.0</version>
+    </dependency>
+
   </dependencies>
 
 </project>
