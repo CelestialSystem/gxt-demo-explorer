@@ -376,7 +376,7 @@
   <repositories>
     <repository>
       <id>sencha-myget</id>
-      <url>https://praveen.rondi:b40e1981-b259-4971-8e0b-44a26f7f77d1@sencha.myget.org/F/maven/maven/</url>
+      <url>https://sencha.myget.org/F/maven/b40e1981-b259-4971-8e0b-44a26f7f77d1/maven/</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -402,13 +402,13 @@
   <dependencies>
     <!-- GWT -->
     <dependency>
-      <groupId>org.gwtproject</groupId>
+      <groupId>com.google.gwt</groupId>
       <artifactId>gwt-user</artifactId>
       <version>${gwt.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.gwtproject</groupId>
+      <groupId>com.google.gwt</groupId>
       <artifactId>gwt-dev</artifactId>
       <version>${gwt.version}</version>
       <scope>provided</scope>
@@ -483,7 +483,7 @@
     <dependency>
       <groupId>com.google.web.bindery</groupId>
       <artifactId>requestfactory-apt</artifactId>
-      <version>2.10.0</version>
+      <version>2.11.0</version>
       <scope>provided</scope>
     </dependency>
     <!-- RF needs a JSON jar at runtime -->
@@ -626,7 +626,7 @@
           <artifactId>selenium-java</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>org.gwtproject</groupId>
+          <groupId>com.google.gwt</groupId>
           <artifactId>gwt-servlet</artifactId>
         </exclusion>
         <exclusion>
@@ -641,7 +641,7 @@
       <version>1.9.22</version>
     </dependency> -->
     <dependency>
-      <groupId>org.gwtproject</groupId>
+      <groupId>com.google.gwt</groupId>
       <artifactId>gwt-servlet</artifactId>
       <version>2.11.0</version>
     </dependency>
