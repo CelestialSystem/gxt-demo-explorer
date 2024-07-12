@@ -86,7 +86,7 @@ public class ExampleDetailViewImpl implements ExampleDetailView {
       }
     });
     Example overview = exampleModel.findExample(ExplorerApp.OVERVIEW.toLowerCase());
-   // tabPanel.add(new Page(overview), overview.getName());
+    tabPanel.add(new Page(overview), overview.getName());
   }
 
   @Override
