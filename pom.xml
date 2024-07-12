@@ -153,7 +153,7 @@
       <plugin>
         <groupId>org.apache.openjpa</groupId>
         <artifactId>openjpa-maven-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.2.2</version>
         <configuration>
           <includes>**/server/data/*.class</includes>
           <addDefaultConstructor>true</addDefaultConstructor>
@@ -315,16 +315,16 @@
           <groupId>org.eclipse.jetty</groupId>
           <artifactId>jetty-maven-plugin</artifactId>
           <version>11.0.19</version>
-        <!--  <configuration>
-            <stopPort>9960</stopPort>
-            <stopKey>stop-jetty</stopKey>
-            <systemProperties>
-              <systemProperty>
-                <name>jetty.port</name>
-                <value>8880</value>
-              </systemProperty>
-            </systemProperties>
-          </configuration>-->
+          <!--  <configuration>
+              <stopPort>9960</stopPort>
+              <stopKey>stop-jetty</stopKey>
+              <systemProperties>
+                <systemProperty>
+                  <name>jetty.port</name>
+                  <value>8880</value>
+                </systemProperty>
+              </systemProperties>
+            </configuration>-->
         </plugin>
 
         <plugin>
@@ -402,13 +402,13 @@
   <dependencies>
     <!-- GWT -->
     <dependency>
-      <groupId>org.gwtproject</groupId>
+      <groupId>com.google.gwt</groupId>
       <artifactId>gwt-user</artifactId>
       <version>${gwt.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.gwtproject</groupId>
+      <groupId>com.google.gwt</groupId>
       <artifactId>gwt-dev</artifactId>
       <version>${gwt.version}</version>
       <scope>provided</scope>
@@ -422,11 +422,11 @@
     </dependency>
 
     <!-- GWT Injection -->
-   <!--<dependency>
-      <groupId>com.google.gwt.inject</groupId>
-      <artifactId>gin</artifactId>
-      <version>2.1.2</version>
-    </dependency>-->
+    <!--<dependency>
+       <groupId>com.google.gwt.inject</groupId>
+       <artifactId>gin</artifactId>
+       <version>2.1.2</version>
+     </dependency>-->
 
     <!-- GWT JsInterop -->
     <dependency>
@@ -483,7 +483,7 @@
     <dependency>
       <groupId>com.google.web.bindery</groupId>
       <artifactId>requestfactory-apt</artifactId>
-      <version>2.10.0</version>
+      <version>2.11.0</version>
       <scope>provided</scope>
     </dependency>
     <!-- RF needs a JSON jar at runtime -->
@@ -493,18 +493,18 @@
       <version>20230227</version>
       <scope>compile</scope>
     </dependency>-->
-   <!-- <dependency>
-      <groupId>org.json</groupId>
-      <artifactId>json</artifactId>
-      <version>20231013</version>
-      <scope>compile</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>com.jayway.jsonpath</groupId>
-          <artifactId>json-path</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency> -->
+    <!-- <dependency>
+       <groupId>org.json</groupId>
+       <artifactId>json</artifactId>
+       <version>20231013</version>
+       <scope>compile</scope>
+       <exclusions>
+         <exclusion>
+           <groupId>com.jayway.jsonpath</groupId>
+           <artifactId>json-path</artifactId>
+         </exclusion>
+       </exclusions>
+     </dependency> -->
 
     <dependency>
       <groupId>jakarta.xml.bind</groupId>
@@ -557,11 +557,11 @@
           <groupId>com.sencha.gxt</groupId>
           <artifactId>gxt-chart</artifactId>
         </exclusion>
-       <exclusion>
+        <exclusion>
           <groupId>com.google.guava</groupId>
           <artifactId>guava</artifactId>
         </exclusion>
-       <exclusion>
+        <exclusion>
           <groupId>io.netty</groupId>
           <artifactId>netty</artifactId>
         </exclusion>
@@ -626,7 +626,7 @@
           <artifactId>selenium-java</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>org.gwtproject</groupId>
+          <groupId>com.google.gwt</groupId>
           <artifactId>gwt-servlet</artifactId>
         </exclusion>
         <exclusion>
@@ -641,7 +641,7 @@
       <version>1.9.22</version>
     </dependency> -->
     <dependency>
-      <groupId>org.gwtproject</groupId>
+      <groupId>com.google.gwt</groupId>
       <artifactId>gwt-servlet</artifactId>
       <version>2.11.0</version>
     </dependency>
@@ -693,23 +693,23 @@
       <artifactId>commons-codec</artifactId>
       <version>1.16.1</version>
     </dependency>
-   <!-- <dependency>
-      <groupId>org.bouncycastle</groupId>
-      <artifactId>bcprov-jdk15on</artifactId>
-      <version>1.70</version>
-    </dependency>
-    <dependency>
-      <groupId>net.sourceforge.htmlunit</groupId>
-      <artifactId>htmlunit</artifactId>
-      <version>2.70.0</version>
-    </dependency> -->
+    <!-- <dependency>
+       <groupId>org.bouncycastle</groupId>
+       <artifactId>bcprov-jdk15on</artifactId>
+       <version>1.70</version>
+     </dependency>
+     <dependency>
+       <groupId>net.sourceforge.htmlunit</groupId>
+       <artifactId>htmlunit</artifactId>
+       <version>2.70.0</version>
+     </dependency> -->
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-util</artifactId>
       <version>11.0.19</version>
     </dependency>
     <dependency>
-     <groupId>xalan</groupId>
+      <groupId>xalan</groupId>
       <artifactId>serializer</artifactId>
       <version>2.7.3</version>
     </dependency>
@@ -718,11 +718,11 @@
       <artifactId>jetty-http</artifactId>
       <version>11.0.19</version>
     </dependency>
-  <!-- <dependency>
-      <groupId>net.sourceforge.nekohtml</groupId>
-      <artifactId>nekohtml</artifactId>
-      <version>1.9.22</version>
-    </dependency> -->
+    <!-- <dependency>
+        <groupId>net.sourceforge.nekohtml</groupId>
+        <artifactId>nekohtml</artifactId>
+        <version>1.9.22</version>
+      </dependency> -->
     <dependency>
       <groupId>xalan</groupId>
       <artifactId>xalan</artifactId>
@@ -734,21 +734,21 @@
       <version>11.0.19</version>
     </dependency>
     <!-- commons collections 3.2.2 version changed and updated in name : latest verions 4.4 : <artifactId>commons-collections</artifactId>-->
-  <!-- <dependency>
-      <groupId>commons-collections</groupId>
-      <artifactId>commons-collections</artifactId>
-      <version>3.2.2</version>
-    </dependency> -->
+    <!-- <dependency>
+        <groupId>commons-collections</groupId>
+        <artifactId>commons-collections</artifactId>
+        <version>3.2.2</version>
+      </dependency> -->
     <dependency>
       <groupId>xerces</groupId>
       <artifactId>xercesImpl</artifactId>
       <version>2.12.2</version>
     </dependency>
-   <!-- <dependency>
-      <groupId>io.netty</groupId>
-      <artifactId>netty</artifactId>
-      <version>4.0.0.Alpha8</version>
-    </dependency> -->
+    <!-- <dependency>
+       <groupId>io.netty</groupId>
+       <artifactId>netty</artifactId>
+       <version>4.0.0.Alpha8</version>
+     </dependency> -->
     <!-- Elemental -->
     <dependency>
       <groupId>com.google.elemental2</groupId>
