@@ -376,13 +376,7 @@
   <repositories>
     <repository>
       <id>sencha-myget</id>
-      <url>https://praveen.rondi:b40e1981-b259-4971-8e0b-44a26f7f77d1@sencha.myget.org/F/maven/maven/</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
+      <url>https://sencha.myget.org/F/gxt-sandbox2/auth/db7f5253-5070-42ee-9e67-4912c00b7eca/maven/</url>
     </repository>
   </repositories>
 
